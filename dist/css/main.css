@@ -1,0 +1,209 @@
+.info, .info__btn {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* for Internet Explorer and Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+body::webkit-scrollbar {
+  display: none; /* fro Chrome, Safari and Opera */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.info, .info__btn {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.main-container {
+  display: grid;
+}
+
+.info {
+  max-width: 19.5rem;
+}
+.info--primary {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem 0.5rem 0 0;
+  padding: 1.8rem 1.5rem 2.05rem 1.5rem;
+}
+.info--subscription {
+  background-color: hsl(179, 62%, 43%);
+  padding: 1.5rem;
+}
+.info--benefits {
+  background-color: #2dbebc;
+  padding: 1.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.info__title {
+  font-weight: 700;
+}
+.info__title--primary {
+  color: #2cbab8;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.info__title--subscription {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+.info__title--benefits {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+.info__subtitle {
+  color: hsl(71, 73%, 54%);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.2rem;
+}
+.info__description {
+  font-weight: 400;
+}
+.info__description--primary {
+  color: #9fabc1;
+  font-size: 0.85rem;
+  line-height: 1.6rem;
+}
+.info__description--subscription {
+  color: hsl(204, 43%, 93%);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+.info__price {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+.info__price-num {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  font-weight: 600;
+}
+.info__price-date {
+  color: hsl(204, 43%, 93%);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.info__btn {
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0.3rem;
+  border: none;
+  width: 100%;
+  padding: 0.95rem;
+  cursor: pointer;
+}
+.info__btn:hover {
+  background-color: hsl(204, 43%, 93%);
+  color: hsl(179, 62%, 43%);
+  transition: 0.3s all;
+}
+.info__list {
+  list-style: none;
+  font-size: 0.9rem;
+  color: hsl(204, 43%, 93%);
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.info, .info__btn {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.attribution {
+  color: #165f5e;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 0.6rem;
+}
+.attribution__link:link, .attribution__link:visited {
+  text-decoration: none;
+  font-weight: 700;
+  color: #2dbebc;
+}
+.attribution__link:hover {
+  color: #208887;
+}
+
+.info, .info__btn {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -moz-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media (min-width: 60rem) {
+  .main-container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+  }
+  .info--primary {
+    grid-area: 1/1/1/3;
+    width: 100%;
+    max-width: 39.7rem;
+    padding: 2.5rem 2.5rem 2.4rem 2.5rem;
+  }
+  .info--subscription {
+    max-width: 20.2rem;
+    padding: 2.5rem 2.5rem 0.5rem 2.5rem;
+    border-radius: 0 0 0 0.5rem;
+  }
+  .info--benefits {
+    max-width: 20.2rem;
+    padding: 2.5rem 2.5rem 0.5rem 2.5rem;
+    font-size: 0.85rem;
+    border-radius: 0 0 0.5rem 0;
+  }
+  .info__title--primary {
+    font-size: 1.48rem;
+  }
+  .info__subtitle {
+    font-size: 1.1rem;
+  }
+  .info__description--primary {
+    font-size: 0.98rem;
+  }
+  .info__description--subscription {
+    font-size: 0.98rem;
+  }
+  .info__btn {
+    margin-bottom: 1.8rem;
+  }
+  .info__list {
+    font-size: 0.85rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

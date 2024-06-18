@@ -1,0 +1,85 @@
+// BOX-SHADOW
+$shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+%shadow {
+    box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+}
+
+// MEDIA QUERY
+$breakpoint-desktop: 60rem;
+
+// FONTS
+
+$family: 'Karla', sans-serif;
+
+$weight: 400, 600, 700;
+
+// FONTS-SIZE
+$size-title-primary: 1.2rem;
+$size-title-subscription: 1.1rem;
+$size-title-benefits: 1.1rem;
+
+$size-subtitle-primary: 0.9rem;
+
+$size-description-primary: 0.85rem;
+$size-description-subscription: 0.95rem;
+
+$size-price-num: 2rem;
+$size-price-date: 1rem;
+$size-btn: 1rem;
+$size-list-item: 0.9rem;
+
+$size-title-primary-desktop: 1.48rem;
+$size-subtitle-primary-desktop: 1.1rem;
+$size-description-desktop: 0.98rem;
+$size-list-item-desktop: 0.85rem;
+
+$size-attributium: 1rem;
+
+// MAX-WIDTH
+$info-width: 19.5rem;
+
+$info-width-primary-desktop: 39.7rem;
+$info-width-subscription-desktop: 20.2rem;
+$info-width-benefits-desktop: 20.2rem;
+
+// RADIUS
+$radius-primary: 0.5rem 0.5rem 0 0;
+$radius-benefits: 0 0 0.5rem 0.5rem;
+$radius-btn: 0.3rem;
+
+$radius-primary-desktop: 0.5rem 0.5rem 0 0;
+$radius-subscription-desktop: 0 0 0 0.5rem;
+$radius-benefits-desktop: 0 0 0.5rem 0;
+
+// PADDING
+$padding-primary: 1.8rem 1.5rem 2.05rem 1.5rem;
+$padding-subscription: 1.5rem;
+$padding-benefits: 1.5rem;
+$padding-block-btn: 0.95rem;
+
+$padding-primary-desktop: 2.5rem 2.5rem 2.4rem 2.5rem;
+$padding-subscription-desktop: 2.5rem 2.5rem 0.5rem 2.5rem;
+$padding-benefits-desktop: 2.5rem 2.5rem 0.5rem 2.5rem;
+
+// MARGIN-BOTTOM
+$margin-bottom-title-primary: 1.5rem;
+$margin-bottom-title-subscription: 1.2rem;
+$margin-bottom-title-benefits: 1.2rem;
+
+$margin-bottom-subtitle-primary: 1rem;
+$margin-bottom-description-primary: 1.7rem;
+$margin-bottom-description-subscription: 2rem;
+
+$margin-bottom-price: 0.4rem;
+
+$margin-bottom-subtitle-desktop: 0.8rem;
+$margin-bottom-btn-desktop: 1.8rem;
+
+// LINE-HEIGHT
+$line-height-list: 1.25rem;
+$line-height-primary: 1.6rem;
+$line-height-description-primary-desktop: 1.7rem;
+$line-height-subtitle: 1.2rem;

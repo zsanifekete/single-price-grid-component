@@ -1,0 +1,31 @@
+// COLORS
+$color-cyan: hsl(179, 62%, 43%);
+$color-bright-yellow: hsl(71, 73%, 54%);
+$color-light-gray: hsl(204, 43%, 93%);
+$color-grayish-blue: hsl(218, 22%, 67%);
+$color-white: hsl(0, 0%, 100%);
+
+// SECTION 1
+$color-bg-primary: $color-white;
+$color-title-primary: lighten($color-cyan, 2%);
+$color-subtitle-primary: $color-bright-yellow;
+$color-description-primary: lighten($color-grayish-blue, 2%);
+
+// SECTION 2
+$color-bg-subscription: $color-cyan;
+$color-title-subscription: $color-white;
+$color-price-num-subscription: $color-white;
+$color-price-date-subscription: $color-light-gray;
+$color-description-subscription: $color-light-gray;
+$color-bg-btn: $color-bright-yellow;
+$color-text-btn: $color-white;
+
+// SECTION 3
+$color-bg-benefits: lighten($color-cyan, 3%);
+$color-title-benefits: $color-white;
+$color-list-item: $color-light-gray;
+
+// FOOTER
+$color-footer: darken($color-cyan, 20%);
+$color-link: lighten($color-cyan, 3%);
+$color-hover: darken($color-cyan, 10%);

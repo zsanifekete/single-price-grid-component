@@ -1,0 +1,120 @@
+@use '../abstracts/color';
+@use '../abstracts/variables' as vars;
+
+.main-container {
+    display: grid;
+}
+
+.info {
+    max-width: vars.$info-width;
+    @extend %shadow;
+
+    &--primary {
+        background-color: color.$color-bg-primary;
+        border-radius: vars.$radius-primary;
+        padding: vars.$padding-primary;
+    }
+
+    &--subscription {
+        background-color: color.$color-bg-subscription;
+        padding: vars.$padding-subscription;
+    }
+
+    &--benefits {
+        background-color: color.$color-bg-benefits;
+        padding: vars.$padding-benefits;
+        border-radius: vars.$radius-benefits;
+    }
+
+    &__title {
+        font-weight: nth(vars.$weight, 3);
+
+        &--primary {
+            color: color.$color-title-primary;
+            font-size: vars.$size-title-primary;
+            margin-bottom: vars.$margin-bottom-title-primary;
+        }
+
+        &--subscription {
+            color: color.$color-title-subscription;
+            font-size: vars.$size-title-subscription;
+            margin-bottom: vars.$margin-bottom-title-subscription;
+        }
+
+        &--benefits {
+            color: color.$color-title-benefits;
+            font-size: vars.$size-title-benefits;
+            margin-bottom: vars.$margin-bottom-title-benefits;
+        }
+    }
+
+    &__subtitle {
+        color: color.$color-subtitle-primary;
+        font-size: vars.$size-subtitle-primary;
+        margin-bottom: vars.$margin-bottom-subtitle-primary;
+        line-height: vars.$line-height-subtitle;
+    }
+
+    &__description {
+        font-weight: nth(vars.$weight, 1);
+        
+        &--primary {
+            color: color.$color-description-primary;
+            font-size: vars.$size-description-primary;
+            line-height: vars.$line-height-primary;
+        }
+        
+        &--subscription {
+            color: color.$color-description-subscription;    
+            font-size: vars.$size-description-subscription;
+            margin-bottom: vars.$margin-bottom-description-subscription;
+        }
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin-bottom: vars.$margin-bottom-price;
+
+        &-num {
+            color: color.$color-price-num-subscription;
+            font-size: vars.$size-price-num;
+            font-weight: nth(vars.$weight, 2);
+        }
+
+        &-date {
+            color: color.$color-price-date-subscription;
+            font-size: vars.$size-price-date;
+            font-weight: nth(vars.$weight, 1);
+        }
+    }
+
+    &__btn {
+        background-color: color.$color-bg-btn;
+        color: color.$color-text-btn;
+        font-size: vars.$size-btn;
+        font-weight: nth(vars.$weight, 2);
+        text-align: center;
+        border-radius: vars.$radius-btn;
+        border: none;
+        width: 100%;
+        padding: vars.$padding-block-btn;
+        cursor: pointer;
+        @extend %shadow;
+        
+        &:hover {
+            background-color: color.$color-light-gray;
+            color: color.$color-cyan;
+            transition: 0.3s all;
+        }
+    }
+    
+    &__list {
+        list-style: none;
+        font-size: vars.$size-list-item;
+        color: color.$color-list-item;
+        font-weight: nth(vars.$weight, 1);
+        line-height: vars.$line-height-list;
+    }
+}

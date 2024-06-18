@@ -1,0 +1,61 @@
+@use '../abstracts/color';
+@use '../abstracts/variables' as vars;
+
+@media (min-width: vars.$breakpoint-desktop) {
+    .main-container {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+    }
+
+    .info {
+        &--primary {
+            //grid-row: 1;
+            //grid-column: 1 / 3;
+            grid-area: 1 / 1 / 1 / 3;
+            width: 100%;
+            max-width: vars.$info-width-primary-desktop;
+            padding: vars.$padding-primary-desktop;
+        }
+        
+        &--subscription {
+            max-width: vars.$info-width-subscription-desktop;
+            padding: vars.$padding-subscription-desktop;
+            border-radius: vars.$radius-subscription-desktop;
+        }
+
+        &--benefits {
+            max-width: vars.$info-width-benefits-desktop;
+            padding: vars.$padding-benefits-desktop;
+            font-size: vars.$size-list-item-desktop;
+            border-radius: vars.$radius-benefits-desktop;
+        }
+
+        &__title {
+            &--primary {
+                font-size: vars.$size-title-primary-desktop;
+            }
+        }
+
+        &__subtitle {
+            font-size: vars.$size-subtitle-primary-desktop;
+        }
+
+        &__description {
+            &--primary {
+                font-size: vars.$size-description-desktop;
+            }
+
+            &--subscription {
+                font-size: vars.$size-description-desktop;
+            }
+        }
+
+        &__btn {
+            margin-bottom: vars.$margin-bottom-btn-desktop;
+        }
+
+        &__list {
+            font-size: vars.$size-list-item-desktop;
+        }
+    }
+}

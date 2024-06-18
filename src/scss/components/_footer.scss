@@ -1,0 +1,23 @@
+@use '../abstracts/color';
+@use '../abstracts/variables' as vars;
+
+.attribution {
+    color: color.$color-footer;
+    font-size: vars.$size-attributium;
+    text-align: center;
+    font-weight: nth( vars.$weight, 2);
+    margin: 0.6rem;
+
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            font-weight: nth(vars.$weight, 3);
+            color: color.$color-link;
+        }
+
+        &:hover {
+            color: color.$color-hover;
+        }
+    }
+}
