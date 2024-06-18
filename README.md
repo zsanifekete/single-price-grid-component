@@ -6,9 +6,9 @@
 
 <div align="center">
     <h3>
-        <a href="" target="_blank" title="Live Site">Live</a>
+        <a href="https://single-price-grid-component-zsani.netlify.app/" target="_blank" title="Live Site">Live</a>
         <span> | </span>
-        <a href="" target="_blank" title="Solution">Solution</a>
+        <a href="https://www.frontendmentor.io/solutions/single-price-grid-component-NMdWJZbXp-" target="_blank" title="Solution">Solution</a>
         <span> | </span>
         <a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc" target="_blank" title="Challenge">Challenge</a>
     </h3>
